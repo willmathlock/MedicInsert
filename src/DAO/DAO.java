@@ -66,9 +66,12 @@ public class DAO implements interfaceDAO{
     
 }
 
-/*CREATE TABLE usuarios(
-name VARCHAR(30) not null,
-sexo VARCHAR(6) not null,
-data VARCHAR(20) not null,
-pw VARCHAR(30) not null
-);*/
+/**
+ * CREATE TABLE usuarios(
+ * id SERIAL primary key not null,
+ * name TEXT not null,
+ * sexo TEXT not null,
+ * email TEXT unique not null,
+ * pw TEXT not null
+ * )
+ */
