@@ -8,14 +8,14 @@ package home;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
+import home.*;
 
 /**
  *
  * @author 152096
  */
 public class HomeTest {
-    
+    TestUtils test = new TestUtils();
     public HomeTest() {
     }
     
@@ -31,12 +31,8 @@ public class HomeTest {
      * Test of main method, of class Home.
      */
     @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        Home.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-    
+    public void testInputsMain() {
+        Home home = new Home();
+        
+    }    
 }

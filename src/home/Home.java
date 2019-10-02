@@ -24,6 +24,10 @@ public class Home extends javax.swing.JFrame {
         btnCadastrar.setOpaque(false);
         btnCadastrar.setContentAreaFilled(false);
         btnCadastrar.setBorderPainted(false);
+        btnCadastrar.setName("cadastrar");
+        txtEmail.setName("email");
+        txtName.setName("name");
+        txtPw.setName("pw");
     }
 
     /**
@@ -62,11 +66,18 @@ public class Home extends javax.swing.JFrame {
 
         txtName.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtName.setForeground(new java.awt.Color(102, 102, 102));
+        txtName.setToolTipText("Insira seu nome aqui");
         txtName.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(12, 91, 160)));
 
         txtEmail.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtEmail.setForeground(new java.awt.Color(102, 102, 102));
+        txtEmail.setToolTipText("Insira seu email");
         txtEmail.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(12, 91, 160)));
+        txtEmail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEmailActionPerformed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(102, 102, 102));
@@ -91,6 +102,7 @@ public class Home extends javax.swing.JFrame {
         txtPw.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         txtPw.setForeground(new java.awt.Color(102, 102, 102));
         txtPw.setText("");
+        txtPw.setToolTipText("Insira sua senha");
         txtPw.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(12, 91, 160)));
 
         kGradientPanel2.setLayout(null);
@@ -209,6 +221,10 @@ public class Home extends javax.swing.JFrame {
         d.cadastrarUsuario(name, pw, email, sex, conn);                
 
     }//GEN-LAST:event_btnCadastrarActionPerformed
+
+    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEmailActionPerformed
 
     /**
      * @param args the command line arguments

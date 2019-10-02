@@ -41,7 +41,7 @@ public class DAO implements interfaceDAO{
             return false;
         }
         if(!email.matches(regex)){
-            JOptionPane.showMessageDialog(null, "COLOCA O EMAIL CERTO O SUA ANTA");
+            JOptionPane.showMessageDialog(null, "Email informado está incorreto");
             return false;
         }
         SQL = "INSERT INTO usuarios(name, sexo, email, pw) values(?, ?, ?, ?)";             
